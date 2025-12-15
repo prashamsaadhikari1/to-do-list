@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Pink To-Do List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-heart"></i> Prashamsa's To-Do List</h1>
+            <p class="subtitle">Get things done with style!</p>
+        </header>
+        
+        <div class="content">
+            <div class="box" id="addTaskBox">
+                <h2 class="box-title"><i class="fas fa-plus"></i> Add Task</h2>
+                <div class="task-input">
+                    <input type="text" id="taskInput" placeholder="What needs to be done?">
+                    <button id="addTaskBtn"><i class="fas fa-plus"></i> Add</button>
+                </div>
+            </div>
+            
+            <div class="box">
+                <h2 class="box-title"><i class="fas fa-list"></i> To-Do List</h2>
+                <ul class="task-list" id="todoList"></ul>
+                <div class="stats">
+                    <span>Remaining: <span id="remainingCount">0</span></span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <h2 class="box-title"><i class="fas fa-check"></i> Completed</h2>
+                <ul class="task-list" id="completedList"></ul>
+                <div class="stats">
+                    <span>Done: <span id="completedCount">0</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
